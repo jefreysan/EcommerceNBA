@@ -1,0 +1,129 @@
+html {
+	box-sizing: border-box;
+    font-size: 62.5%; /*1rem=10px*/
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+/**Globales**/
+body{
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+h1{
+    font-size: 5rem;
+}
+h2{
+    font-size: 4rem;
+}
+h3{
+    font-size: 3rem;
+    margin: 0 0 5rem 0;
+}
+h1,h2,h3{
+    text-transform: uppercase;
+    font-family: 'Playfair Display',serif;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;    
+}
+
+/**Header y Navegacion**/
+
+.nombre-sitio{
+    margin-top: 5rem;
+    text-align: center;
+    text-transform: uppercase;  
+}
+.nombre-sitio span{
+    text-transform: uppercase;
+    color:#FFC300 ;
+}
+
+h2 span{
+    color:#FFC300 ;
+    text-transform: uppercase;
+}
+.contenedor-navegacion{
+   border-top: .1rem solid #e1e1e1;
+}
+.nav-principal{
+ padding: 20px 0px;
+ display: flex;
+ justify-content: space-between;
+}
+
+.hero{
+    background-image:url(../img/hero.jpg) ;
+    height: 55rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.enlace {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  color: #3383FF;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+/**categorias**/
+
+.categorias{
+    padding: 5rem;
+}
+.categorias h2{
+  text-align: center;
+}
+.categoria a{
+    display: block;
+    text-align: center;
+    padding: 2rem;
+    font-size: 2rem;
+}
+.categoria a:hover{
+    background-color: #3CDA97;
+    color: #FFFFFF;
+    border-bottom-right-radius: 1rem;
+
+}
+
+.listado-categorias{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:1rem;
+  
+}
+
+/*Bloque Nosotros*/
+
+.sobre-nosotros{
+    background-image: linear-gradient(to right, transparent 50%, #FFC300  50%,
+    #FFC300   100%),url(../img/nosotros.jpg);
+    padding:10rem 0;
+    background-repeat: no-repeat;
+    background-size:100% ,120rem;
+}
+
+.sobre-nosotros-grid{
+    display: flex;
+    justify-content: flex-end;
+
+}
+.texto-nosotros{
+    flex-basis: 50%;
+    padding: 10rem;
+}
